@@ -1,6 +1,8 @@
 import discord
 import os
 import time
+import pet
+
 
 client = discord.Client()
 
