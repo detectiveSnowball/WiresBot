@@ -29,8 +29,8 @@ async def on_message(message):
   elif(message.content.startswith("!pet wires")):
     time.sleep(2.5)
     await message.channel.send("_purrrrrrrrrr_")
-
-  elif "meow" or "wires" in message.content.lower() and not message.content.startswith("!"):
+  
+  elif ( ("meow" in message.content.lower() or "wires" in message.content.lower()) and (not message.content.startswith("!"))):
     time.sleep(2.5)
     await message.channel.send("meow")
   
